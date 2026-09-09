@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shubham — Computer Science student, Python developer and aspiring software engineer.">
+  <title>Shubham | CSE Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="grid-bg"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a class="brand" href="#home" aria-label="Shubham home"><span>ST</span><b>Shubham</b><em>.dev</em></a>
+      <div class="nav-links">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+        <a href="#timeline">Timeline</a><a href="#certifications">Certs</a><a href="#contact">Contact</a>
+      </div>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle dark mode">☀ <span>Light</span></button>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <div class="status"><span></span> Available for opportunities</div>
+        <p class="terminal">shubham@lpu:~$ ./portfolio --load</p>
+        <h1>SHUBHAM<br><span>CSE</span></h1>
+        <h2>Computer Science · Python · Web Development</h2>
+        <p class="lead">B.Tech CSE student at Lovely Professional University, building practical software projects and growing into a versatile software developer.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects ↗</a>
+          <a class="btn" href="resume.pdf" target="_blank" rel="noopener">↓ Resume PDF</a>
+          <a class="btn" href="#contact">Hire / Connect</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="window-bar"><i></i><i></i><i></i><span>shubham_profile.json</span></div>
+        <pre>{
+  <b>"role"</b>: <span>"CSE Student"</span>,
+  <b>"focus"</b>: [<span>"Python"</span>,
+             <span>"Web Dev"</span>,
+             <span>"Problem Solving"</span>],
+  <b>"university"</b>: <span>"LPU"</span>,
+  <b>"cgpa"</b>: <span>8.02</span>,
+  <b>"status"</b>: <span>"Learning + Building"</span>
+}</pre>
+      </div>
+    </section>
+
+    <section class="stats section compact">
+      <div><strong>8.02</strong><span>CGPA @ LPU</span></div>
+      <div><strong>2+</strong><span>Featured Projects</span></div>
+      <div><strong>3</strong><span>Certificates / Training</span></div>
+      <div><strong>4+</strong><span>Core Languages</span></div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-head"><small>01 / ABOUT</small><h2>The Developer</h2></div>
+      <div class="about-grid">
+        <div class="about-main">
+          <p class="eyebrow">Hello, I'm Shubham 👋</p>
+          <h3>Turning learning into <span>working software.</span></h3>
+          <p>I’m a Computer Science and Engineering student at Lovely Professional University. I enjoy learning programming fundamentals, building useful applications, and turning ideas into clean, practical projects.</p>
+          <p>My current toolkit includes Python, C, C++, JavaScript, Flask, Django, Node.js, SQL databases, Git/GitHub and Figma. I’m especially interested in software development, backend logic and full-stack project building.</p>
+          <div class="about-tags"><span>Problem Solving</span><span>Adaptability</span><span>Time Management</span><span>Team Leadership</span></div>
+        </div>
+        <aside class="info-card">
+          <div><span>🎓 Degree</span><b>B.Tech CSE</b></div>
+          <div><span>🏫 University</span><b>Lovely Professional University</b></div>
+          <div><span>📍 Location</span><b>Punjab, India</b></div>
+          <div><span>📧 Email</span><a href="mailto:tyagishubham911@gmail.com">tyagishubham911@gmail.com</a></div>
+          <div><span>📱 Mobile</span><a href="tel:+919927214368">+91 9927214368</a></div>
+          <div><span>💼 Status</span><b class="available">● Learning & Building</b></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head"><small>02 / CAPABILITIES</small><h2>Tech Arsenal</h2></div>
+      <div class="tabs">
+        <button class="tab active" data-tab="languages">Languages</button>
+        <button class="tab" data-tab="frameworks">Frameworks & Libraries</button>
+        <button class="tab" data-tab="data">Databases</button>
+        <button class="tab" data-tab="tools">Tools</button>
+      </div>
+      <div class="skills-dashboard">
+        <div class="skill-summary"><div><span>Skill Proficiency</span><strong>Developer Stack</strong></div><div class="legend"><span><i></i>Strong</span><span><i></i>Growing</span></div></div>
+        <div class="skill-grid" id="skillGrid"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head"><small>03 / WORK</small><h2>Featured Projects</h2></div>
+      <div class="project-grid">
+        <article class="project">
+          <div class="project-top"><span>01 / PROJECT</span><b>FULL STACK</b></div>
+          <div class="project-icon">💸</div>
+          <h3>Spend Wise</h3>
+          <p>Personal Expense & Budget Management System for managing income, expenses, categories and monthly budgets.</p>
+          <div class="chips"><span>Python</span><span>Flask</span><span>JavaScript</span><span>MySQL</span><span>HTML</span><span>CSS</span></div>
+          <div class="project-links"><a href="https://github.com/Shubham-tyagi-911" target="_blank" rel="noopener">⬡ GitHub Profile ↗</a><a href="#contact">Discuss Project →</a></div>
+        </article>
+        <article class="project">
+          <div class="project-top"><span>02 / PROJECT</span><b>OOP / C++</b></div>
+          <div class="project-icon">🎓</div>
+          <h3>Student Track</h3>
+          <p>Console-based Student Result Management System using C++ and OOP to manage records and academic performance.</p>
+          <div class="chips"><span>C++</span><span>OOP</span><span>Data Structures</span><span>File Handling</span><span>Git</span></div>
+          <div class="project-links"><a href="https://github.com/Shubham-tyagi-911" target="_blank" rel="noopener">⬡ GitHub Profile ↗</a><a href="#contact">Discuss Project →</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="metrics section compact">
+      <div><strong>8.02</strong><span>Current CGPA</span></div>
+      <div><strong>2026</strong><span>Python Internship</span></div>
+      <div><strong>2</strong><span>Major Projects</span></div>
+      <div><strong>∞</strong><span>Learning Mindset</span></div>
+    </section>
+
+    <section id="certifications" class="section">
+      <div class="section-head"><small>04 / LEARNING</small><h2>Training & Certifications</h2></div>
+      <div class="cert-list">
+        <a class="cert" href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_0125409616243425281061_shared/59109358-bec8-47f6-a521-001e361996bd.pdf" target="_blank" rel="noopener">
+          <span class="num">01</span><div><b>Programming Fundamentals using Python</b><small>Infosys Springboard · View Certificate ↗</small></div><span>PDF ↗</span>
+        </a>
+        <a class="cert" href="https://www.linkedin.com/learning/certificates/db8e892cefb3d7715a39aa470b9457f02487da60acc06392419b2fe34ac75691" target="_blank" rel="noopener">
+          <span class="num">02</span><div><b>Time Management</b><small>LinkedIn Learning · View Certificate ↗</small></div><span>LINK ↗</span>
+        </a>
+        <div class="cert muted">
+          <span class="num">03</span><div><b>Introduction to Cyber Security</b><small>Infosys Springboard · 2025 · Certificate link not supplied</small></div><span>—</span>
+        </div>
+        <div class="cert">
+          <span class="num">04</span><div><b>Web Development — HTML, CSS & JavaScript Fundamentals</b><small>Training · Aug 2026 · HTML5, CSS3, JavaScript, DOM, events, forms & responsive design</small></div><span>TRAINING</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="section">
+      <div class="section-head"><small>05 / JOURNEY</small><h2>Timeline</h2></div>
+      <div class="timeline">
+        <article><time>2025 — Present</time><div><h3>B.Tech — Computer Science & Technology</h3><p>Lovely Professional University, Punjab</p><span>CGPA 8.02 · CSE</span></div></article>
+        <article><time>Jun 2026 — Jul 2026</time><div><h3>Python Developer Intern</h3><p>Infosys Springboard</p><span>Python applications · automation scripts · debugging · Git/GitHub</span></div></article>
+        <article><time>Jul 2026 — Aug 2026</time><div><h3>Spend Wise</h3><p>Personal Project</p><span>Python · Flask · JavaScript · MySQL · REST APIs · CRUD</span></div></article>
+        <article><time>Sep 2026</time><div><h3>Student Track</h3><p>Personal Project</p><span>C++ · OOP · arrays · file handling · searching · sorting</span></div></article>
+        <article><time>2023 — Mar 2025</time><div><h3>House Captain</h3><p>Extracurricular Leadership</p><span>Led a student team · delegated responsibilities · coordinated events</span></div></article>
+        <article><time>Apr 2024 — Mar 2025</time><div><h3>Senior Secondary — Class XII</h3><p>Dev Memorial Public School</p><span>74.87%</span></div></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-head"><small>06 / CONNECT</small><h2>Let's build something.</h2></div>
+      <p class="contact-lead">Open to internships, project collaborations, learning opportunities and developer connections.</p>
+      <div class="contact-grid">
+        <div class="contact-links">
+          <a href="mailto:tyagishubham911@gmail.com">📧 <span>Email<small>tyagishubham911@gmail.com</small></span></a>
+          <a href="tel:+919927214368">📱 <span>Phone<small>+91 9927214368</small></span></a>
+          <a href="https://www.linkedin.com/in/shubham-tyagi4366" target="_blank" rel="noopener">💼 <span>LinkedIn<small>shubham-tyagi4366 ↗</small></span></a>
+          <a href="https://github.com/Shubham-tyagi-911" target="_blank" rel="noopener">💻 <span>GitHub<small>Shubham-tyagi-911 ↗</small></span></a>
+          <a href="resume.pdf" target="_blank" rel="noopener">📄 <span>Resume<small>Open CV PDF ↗</small></span></a>
+        </div>
+        <form id="contactForm">
+          <label>Full Name<input required id="name" placeholder="Your name"></label>
+          <label>Email<input required id="email" type="email" placeholder="your@email.com"></label>
+          <label>Message<textarea required id="message" rows="5" placeholder="Let's connect..."></textarea></label>
+          <button class="btn primary" type="submit">⚡ Send Message</button>
+          <p id="formStatus" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Shubham Tyagi · CSE @ LPU</span>
+    <div><a href="https://github.com/Shubham-tyagi-911" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/shubham-tyagi4366" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:tyagishubham911@gmail.com">Email</a></div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
